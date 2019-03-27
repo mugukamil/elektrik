@@ -1,0 +1,214 @@
+body
+  min-width: 1024px
+  background-color: #fff
+  font-family: Roboto
+
+.container
+  width: 1024px
+  margin: auto
+
+.clr
+  +clr
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+.text-right
+  text-align: right
+
+.text-center
+  text-align: center
+
+.pull-right
+  float: right
+
+.pull-left
+  float: left
+
+.site-header
+  margin-top: 45px
+  &__logo
+    display: inline-block
+    width: 120px
+    vertical-align: top
+    margin-left: 40px
+    img
+      max-width: 100%
+  &__slogan
+    margin-left: 40px
+    margin-top: 20px
+    width: 630px
+    display: inline-block
+    vertical-align: top
+    &-text
+      font-size: 30px
+      color: #303030
+      font-weight: 400
+      span
+        color: #0085c2
+        font-weight: 700
+  &__pluses
+    margin-top: 20px
+    margin-left: -20px
+    li
+      display: inline-block
+      vertical-align: top
+      width: 210px
+      margin-left: -10px
+      &:last-child
+        width: 250px
+    p
+      margin-top: 10px
+      font-weight: 300
+      line-height: 25px
+      color: #000000
+      font-size: 18px
+    small
+      color: #666666
+      font-size: 12px
+    img
+      float: left
+      width: 100px
+  &__contact
+    display: inline-block
+    vertical-align: top
+    width: 190px
+    margin-top: 20px
+    a
+      color: #303030
+      font-size: 20px
+      font-weight: 400
+      span
+        font-size: 25px
+        font-weight: 700
+    .btn
+      display: inline-block
+      margin-top: 10px
+      width: 160px
+      float: right
+    img
+      max-width: 100%
+
+
+.site-nav
+  margin-top: 50px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), inset 0 1px 1px #ffffff
+  border-radius: 8px
+  border: 1px solid rgba(220, 220, 220, 0.8)
+  background-color: #f2f2f2
+  padding-top: 10px
+  padding-bottom: 10px
+  padding-left: 70px
+  margin-bottom: 50px
+  li
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    & + li
+      margin-left: 80px
+  a
+    text-shadow: 0 1px 0 #ffffff
+    color: #666666
+    font-family: "Helvetica Neue"
+    font-size: 22px
+    font-weight: 400
+    &:hover
+      color: #007fb6
+
+.site-sidebar
+  width: 250px
+  display: inline-block
+  vertical-align: top
+  margin-right: 20px
+  &__heading
+    margin-bottom: 30px
+    margin-left: 10px
+  &__links
+    li
+    a
+      display: block
+      padding-top: 20px
+      padding-bottom: 20px
+      background-color: #303030;
+      color: white
+      padding-left: 15px
+      font-size: 16px
+      font-weight: 400
+      &:before
+        content: ''
+        display: inline-block
+        width: 13px
+        height: 15px
+        background-image: url(../img/icon-list.png)
+        background-repeat: no-repeat
+        background-size: 60%
+        margin-right: 5px
+        vertical-align: bottom
+      &:hover
+        background-image: linear-gradient(to top, #069ddf 0%, #7ad6ff 100%);
+        &:before
+          background-image: url(../img/icon-list-black.png)
+
+.site-content
+  display: inline-block
+  vertical-align: top
+  width: 750px
+  &__heading
+    margin-bottom: 30px
+  p
+    color: #3c3c3c
+    font-size: 16px
+    font-weight: 400
+
+.site-footer
+  margin-top: 70px
+  padding-bottom: 50px
+  &__left
+    width: 380px
+    display: inline-block
+    vertical-align: top
+    margin-right: 20px
+  &__right
+    display: inline-block
+    vertical-align: top
+    width: 340px
+    position: relative
+  &__nav
+    li
+      display: inline-block
+      vertical-align: top
+      & + li
+        margin-left: 5px
+      a
+        font-size: 16px
+        font-weight: 300
+        line-height: 33px
+        color: #359eed
+        &:hover
+          color: #dc6d1b
+  &__contacts
+    margin-top: 40px
+    img
+      width: 30px
+      float: left
+      margin-top: 4px
+    &-phone
+      color: #333333
+      font-size: 20px
+      font-weight: 700
+    &-email
+      color: #359eed
+      font-size: 14px
+      font-weight: 300
+    p,address
+      color: #333333
+      font-size: 14px
+      font-weight: 300
+      margin-top: 10px
+  &__btn
+    top: 80px
+    position: absolute
+    right: 0
+

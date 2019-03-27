@@ -1,0 +1,105 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+  .container
+    header.site-header
+        .site-header__logo
+          a(href="/")
+            img(src="img/logo.png", alt="")
+        .site-header__slogan
+          p.site-header__slogan-text Команда электриков&nbsp;
+            span Екатеринбурга
+          ul.site-header__pluses
+            li
+              img(src="img/icon-work.png")
+              p Работаем
+              small для вас с 8 утра
+                br
+                | до 22 вечера
+            li
+              img(src="img/icon-get.png")
+              p Принимаем
+              small заявки через сайт
+                br
+                | круглосуточно!
+            li
+              img(src="img/icon-trans.png")
+              p Выезжаем
+              small в течение 1 часа
+                br
+                | со всеми инструментами
+        .site-header__contact.pull-right
+          a(href="tel:(343)222-15-120") (343)
+            span 222-15-120
+          br
+          a.btn(href="")
+            img(src="img/btn-orange.png" alt="")
+    nav.site-nav
+      ul
+        li
+          a(href='') Главная
+        li
+          a(href='') О компаниия
+        li
+          a(href='') Прайс-лист
+        li
+          a(href='') Отзывы
+        li
+          a(href='') Контакты
+
+    .main-content
+      aside.site-sidebar
+        h1.site-sidebar__heading Наши услуги
+        ul.site-sidebar__links
+          -for (var i = 0; i < 10; i++)
+            li
+              a(href='') Замена электропроводки
+
+      main.site-content
+        h1 wp-loop goes here
+        p.
+          Услуги электрика могут понадобиться во время проведения ремонта. Чаще всего в этом случае осуществляется частичная либо полная замена проводки, производимая еще до начала отделки. Возникновение неисправностей может повлечь за собой необходимость воспользоваться возможностью вызова электрика на дом. Если проблемы вызваны большой нагрузкой в сети, мастер устранит причины, влекущие за собой отказ сети либо перегрузки:
+              заменит провода, если их сечение не соответствует токовой нагрузке;
+              устранит утечку на подводящие провода тока, если таковая имеется.
+          Чтобы минимизировать риск появления неисправностей, следует позаботиться о том, чтобы приборы корректно функционировали. Наши специалисты также помогут вам осуществить подключение бытового электрооборудования надлежащим образом. Также вы можете вызвать электрика на дом, если требуется устранить ряд других проблем:
+              поменять нарушенную по причине износа либо повреждения изоляцию проводов;
+              зафиксировать надлежащим образом розетку;
+              обеспечить правильное оконцовывание и соединение проводов;
+              поменять вышедшие из строя плавкие вставки и предохранители.
+
+        footer.site-footer
+          .site-footer__left
+            .site-footer__map
+              iframe(src="https://api-maps.yandex.ru/frame/v1/-/CZhzJL-V" width="100%" height="300" frameborder="0")
+          .site-footer__right
+            .site-footer__nav
+              ul
+                li
+                  a(href='') О компании
+                li
+                  a(href='') Прайс-лист
+                li
+                  a(href='') Отзывы
+                li
+                  a(href='') Контакты
+            a(href="")
+              img.site-footer__btn.pull-right(src="img/btn-green.png" width="150px")
+            .site-footer__contacts
+              p
+                a.site-footer__contacts-phone(href="tel:+7(343)2221520") +7 (343) 222-15-20
+              p.clr
+                img(src="img/icon-mail.png" alt="")
+                a.site-footer__contacts-email(href="mailto:info@washekb.ru") info@washekb.ru
+              address.clr
+                img(src="img/icon-map.png" alt="")
+                | г. Екатеринбург, микрорайон Юго-Западный,улица Шаумяна, 83
+              p.clr Работаем с 8:00 до 22:00
+                img(src="img/icon-time.png" alt="")
+                br
+                | без выходных
+            a.pull-right(href="/")
+              img.site-footer__logo(src="img/logo.png" width="100")
+
+

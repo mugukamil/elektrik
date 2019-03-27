@@ -1,0 +1,11 @@
+include _mixins
+doctype html
+html
+  head
+    include _head
+
+  body
+    block content
+
+    block scripts
+      script(type="text/javascript" src="js/app.js")
